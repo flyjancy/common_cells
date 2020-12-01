@@ -1,2 +1,2 @@
-# Template
-Template using verilog HDL.
+# Common Cells
+common Verilog components
