@@ -11,10 +11,10 @@
 // ----------------------------------------------------------------------- // 
 
 module uart_top (
-    input       clk,
-    input       rst_n,
-    input       rxd,
-    output [7:0]data
+    input            clk,
+    input            rst_n,
+    input            rxd,
+    output [7:0]     data
 );
 
 wire clk_uart;
