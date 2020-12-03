@@ -8,7 +8,6 @@
 // Date      BY          Version  Change Description
 //
 // 20200127  pastglory   1.0      Initial Release. 
-//
 // ----------------------------------------------------------------------- //
 
 module float_adder #(
