@@ -1,10 +1,15 @@
-//-----------------------------------------------------------------
-//   Float Point Adder
-//   IEEE 754 Float Standard 
-//   For 32bit Float Point Add Operation
-//   input a + b = c output
-//   2020.1.27
-//-----------------------------------------------------------------
+// -----------------------------Details----------------------------------- // 
+// File        : float_adder.v
+// Author      : pastglory
+// Date        : 20200127
+// Version     : 1.0
+// Description : 32-bit float point adder 
+// -----------------------------History----------------------------------- //
+// Date      BY          Version  Change Description
+//
+// 20200128  pastglory   1.0      Initial Release. 
+//
+// ----------------------------------------------------------------------- //
 
 module float_adder #(
   parameter   E     =     8,  //  Exponent

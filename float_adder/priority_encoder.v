@@ -1,8 +1,15 @@
-//-----------------------------------------------------
-//  Find the first 1, from MSB to LSB
-//  If not find, output 23
-//  2020.1.27
-//-----------------------------------------------------
+// -----------------------------Details----------------------------------- // 
+// File        : priority_encoder.v
+// Author      : pastglory
+// Date        : 20200127
+// Version     : 1.0
+// Description : find the MSB(1) 
+// -----------------------------History----------------------------------- //
+// Date      BY          Version  Change Description
+//
+// 20200128  pastglory   1.0      Initial Release. 
+//   
+// ----------------------------------------------------------------------- //
 
 module priority_encoder (
     input     [24 : 0]     DataIn,

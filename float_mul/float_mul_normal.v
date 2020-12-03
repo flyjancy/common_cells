@@ -1,8 +1,16 @@
-//---------------------------------------------------------------
-//  Float Point Multiplication Normalization
-//  To Normalize the exponent and mantissa of answer
-//  2020.1.27
-//---------------------------------------------------------------
+// -----------------------------Details----------------------------------- // 
+// File        : float_mul_normal.v
+// Author      : pastglory
+// Date        : 20200128
+// Version     : 1.0
+// Description : normalize the result
+// -----------------------------History-----------------------------------//
+// Date      BY          Version  Change Description
+//
+// 20200128  pastglory   1.0      Initial Release. 
+//
+// -----------------------------------------------------------------------// 
+
 module float_mul_normal #(
   parameter E = 8,
   parameter M = 23
