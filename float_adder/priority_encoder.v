@@ -4,7 +4,7 @@
 //  2020.1.27
 //-----------------------------------------------------
 
-module PriorityEncoder (
+module priority_encoder (
     input     [24 : 0]     DataIn,
     output    [4 : 0]      DataOut
 );

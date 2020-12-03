@@ -8,5 +8,5 @@ This repository contains common cells(Verilog) for use in projects.
 
 |           Name          |                     Description                     |    Status    | 
 |:-----------------------:|:---------------------------------------------------:|:------------:|
-| `FloatAdder`            | (32 bit) float point adder                          | finish       |
-| `FloatMul`              | (32 bit) float point multiplier                     | finish       |
+| `float_adder`            | (32 bit) float point adder                          | finish       |
+| `float_mul`              | (32 bit) float point multiplier                     | finish       |

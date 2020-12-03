@@ -6,7 +6,7 @@
 //   2020.1.27
 //-----------------------------------------------------------------
 
-module FloatAdder #(
+module float_adder #(
   parameter   E     =     8,  //  Exponent
   parameter   M     =     23, //  Mantissa
   parameter   Width =     32

@@ -3,7 +3,7 @@
 //  2020.1.27
 //---------------------------------------------------------
 
-module ComplementEncoder #(
+module complement_encoder #(
   parameter   Width         =     26
 )(
   input       [Width - 1 : 0]       DataIn,

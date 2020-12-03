@@ -3,7 +3,7 @@
 //  To Normalize the exponent and mantissa of answer
 //  2020.1.27
 //---------------------------------------------------------------
-module FloatMulNormal #(
+module float_mul_normal #(
   parameter E = 8,
   parameter M = 23
 )(

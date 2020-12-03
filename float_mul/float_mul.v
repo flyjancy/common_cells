@@ -4,7 +4,7 @@
 //  For 32bit Float Point Multiplication Operation
 //  2020.1.27
 //--------------------------------------------------------------------------
-module FloatMul #(
+module float_mul #(
   //  IEEE 754 float standard
   parameter   E     =     8,  //  Exponent
   parameter   M     =     23, //  Mantissa
