@@ -11,7 +11,13 @@
 // ----------------------------------------------------------------------- // 
 
 module uart_tx (
-    //TODO
+    input           clk,        // fpga clock
+    input           clk_uart,   // UART clock
+    input           rst_n,      // reset
+    input [7 : 0]   data,       // data for trans
+    output          txd         // tx data
 );
+
+//TODO
 
 endmodule

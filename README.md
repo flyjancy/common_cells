@@ -4,7 +4,7 @@ This repository contains common cells(Verilog) for use in projects.
 
 ## Module List
 
-### Datapath Elements
+### Computer Arithmetic
 
 |           Name          |                     Description                     |    Status      | 
 |:-----------------------:|:---------------------------------------------------:|:--------------:|
