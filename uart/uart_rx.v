@@ -15,7 +15,7 @@ module uart_rx (
     input               clk_uart,       // UART clock
     input               rst_n,          // reset
     input               rxd,            // rx data
-    output [7:0]        data            // received data
+    output [7 : 0]      data            // received data
 );
 
 // using shift reg to change status
