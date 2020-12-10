@@ -3,7 +3,7 @@
 // Author      : pastglory
 // Date        : 20201203
 // Version     : 1.0
-// Description : clock divide
+// Description : clock divide module
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //

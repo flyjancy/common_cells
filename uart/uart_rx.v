@@ -3,7 +3,7 @@
 // Author      : pastglory
 // Date        : 20201203
 // Version     : 1.0
-// Description : receive data
+// Description : uart module for receiving data
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
