@@ -87,7 +87,7 @@ ComplementEncoder #(
 
 wire          [4 : 0]               sc;
 PriorityEncoder  PE (
-     .DataIn          (cm)
+     .DataIn          (cm[24:0])
     ,.DataOut         (sc)
 );
 
