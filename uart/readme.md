@@ -1,4 +1,4 @@
-## uart
+## UART
 
 `uart_top` : 顶层模块
 
