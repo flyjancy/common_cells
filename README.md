@@ -11,6 +11,7 @@ This repository contains common cells(Verilog) for use in projects.
 | :-: | :-: | :-: |
 | `float_adder` | (32 bit) float point adder | finish |
 | `float_mul` | (32 bit) float point multiplier | finish |
+| `binary2bcd` | 8-bit binary to bcd | finish |
 | `alu` | basic alu | *todo* |
 
 ### Data Trans
