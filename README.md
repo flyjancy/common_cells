@@ -16,7 +16,6 @@ This repository contains common cells(Verilog) for use in projects.
 | `cordic` | calculate arctan using cordic algorithm | *todo* |
 | `fft` | fast fourier transform | *todo* |
 
-
 ### Data Trans
 
 | Name | Description | Status |
