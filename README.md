@@ -21,7 +21,7 @@ This repository contains common cells(Verilog) for use in projects.
 
 | Name | Description | Status |
 | :-: | :-: | :-: |
-| `uart` | UART protocol(uart_rx & uart_tx) | finish |
+| `uart` | UART protocol(including sending and receiving module) | finish |
 | `fifo_syn` | synchronous FIFO | *todo* |
 | `fifo_asyn` | asynchronous FIFO | *todo* |
 
@@ -29,7 +29,7 @@ This repository contains common cells(Verilog) for use in projects.
 
 | Name | Description | Status |
 | :-: | :-: | :-: |
-| `ahb_lite` | AHB-Lite protocol | *todo* |
+| `ahb_lite` | simple implementation of AHB-Lite protocol | *todo* |
 
 ### Special Module
 
