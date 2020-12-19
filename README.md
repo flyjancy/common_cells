@@ -1,3 +1,15 @@
+<style>
+table th:first-of-type {
+    width: 8cm;
+}
+table th:nth-of-type(2) {
+    width: 10cm;
+}
+table th:nth-of-type(3) {
+    width: 5cm;
+}
+</style>
+
 # Common Cells
 
 This repository contains common cells(Verilog) for use in projects.
