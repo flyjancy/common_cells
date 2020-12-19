@@ -1,3 +1,3 @@
 ## Binary2bcd
 
-binary2bcd\schematic.png
+![avatar](https://github.com/pastglory/common_cells/blob/main/binary2bcd/schematic.png)
