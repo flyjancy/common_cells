@@ -11,7 +11,7 @@ This repository contains common cells(Verilog) for use in projects.
 | `float_adder` | (32 bit) float point adder | finish |
 | `float_mul` | (32 bit) float point multiplier | finish |
 | `binary2bcd` | 8-bit binary to bcd | finish |
-| `gcd` | GCD of 2 integers | *todo* |
+| `gcd` | GCD of 2 integers | finish |
 | `alu` | basic alu | *todo* |
 | `cordic` | calculate arctan using cordic algorithm | *todo* |
 | `fft` | fast fourier transform | *todo* |
