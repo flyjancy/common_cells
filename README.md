@@ -24,11 +24,12 @@ This repository contains common cells(Verilog) for use in projects.
 | `fifo_syn` | synchronous FIFO | *todo* |
 | `fifo_asyn` | asynchronous FIFO | *todo* |
 
-### Interconnect Specification
+### Interconnect
 
 | Name | Description | Status |
 | :-: | :-: | :-: |
 | `ahb_lite` | simple implementation of AHB-Lite protocol | *todo* |
+| `iicm` | iic master controller(using for controlling MP8864) | *doing* |
 
 ### Special Module
 
