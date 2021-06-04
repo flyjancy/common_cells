@@ -7,11 +7,11 @@ module trans(
     input           trans_reg,
     input           trans_data,
     input           trans_stop,
-    output          finish_start,
-    output          finish_chip,
-    output          finish_reg,
-    output          finish_data,
-    output          finish_stop,
+    output reg      finish_start,
+    output reg      finish_chip,
+    output reg      finish_reg,
+    output reg      finish_data,
+    output reg      finish_stop,
     // input data and iic signal
     input  [7:0]    data_in,
     output          scl,
@@ -68,10 +68,27 @@ always @ (posedge clk) begin
     end
 end
 
-assign finish_chip  = trans_chip  & (sda_cnt == 4'd0);
-assign finish_reg   = trans_reg   & (sda_cnt == 4'd0);
-assign finish_data  = trans_data  & (sda_cnt == 4'd0);
-assign finish_start = trans_start & (~sda_reg);
-assign finish_stop  = trans_stop  & (sda_reg);
+always @ (posedge clk) begin
+    if (~rstn) begin
+        finish_chip  <= 1'b0;
+        finish_reg   <= 1'b0;
+        finish_data  <= 1'b0;
+        finish_start <= 1'b0;
+        finish_stop  <= 1'b0;
+    end
+    else begin
+        finish_chip  <= trans_chip  & (sda_cnt == 4'd0);
+        finish_reg   <= trans_reg   & (sda_cnt == 4'd0);
+        finish_data  <= trans_data  & (sda_cnt == 4'd0);
+        finish_start <= trans_start & (~sda_reg);
+        finish_stop  <= trans_stop  & (sda_reg);
+    end
+end
+ 
+// assign finish_chip  = trans_chip  & (sda_cnt == 4'd0);
+// assign finish_reg   = trans_reg   & (sda_cnt == 4'd0);
+// assign finish_data  = trans_data  & (sda_cnt == 4'd0);
+// assign finish_start = trans_start & (~sda_reg);
+// assign finish_stop  = trans_stop  & (sda_reg);
 
 endmodule

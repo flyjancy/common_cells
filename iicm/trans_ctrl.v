@@ -1,18 +1,18 @@
 module trans_ctrl(
-    input           clk,
-    input           rstn,
-    input           start_sys,
-    input           finish_start,
-    input           finish_chip,
-    input           finish_reg,
-    input           finish_data,
-    input           finish_stop,
-    output [1:0]    data_sel,
-    output          trans_start,
-    output          trans_chip,
-    output          trans_reg,
-    output          trans_data,
-    output          trans_stop
+    input            clk,
+    input            rstn,
+    input            start_sys,
+    input            finish_start,
+    input            finish_chip,
+    input            finish_reg,
+    input            finish_data,
+    input            finish_stop,
+    output reg [1:0] data_sel,
+    output           trans_start,
+    output           trans_chip,
+    output           trans_reg,
+    output           trans_data,
+    output           trans_stop
 );
 
 parameter IDLE     = 6'b000001;
@@ -41,18 +41,16 @@ always @ (posedge clk) begin
 end
 
 // DATA MUX
-reg [1:0] data_sel_reg;
 always @ (*) begin
     if (cur_state == T_CHIP)
-        data_sel_reg = 2'b00;
+        data_sel = 2'b00;
     else if (cur_state == T_REG)
-        data_sel_reg = 2'b01;
+        data_sel = 2'b01;
     else if (cur_state == T_DATA)
-        data_sel_reg = 2'b10;
+        data_sel = 2'b10;
     else 
-        data_sel_reg = 2'b11;
+        data_sel = 2'b11;
 end
-assign data_sel = data_sel_reg;
 
 assign trans_start = cur_state[1] & (~finish_start);
 assign trans_chip  = cur_state[2] & (~finish_chip);

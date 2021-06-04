@@ -19,6 +19,7 @@ v_dec voltage_decoder(
 
 // DATA MUX
 reg  [7:0] iic_data;
+wire [1:0] data_sel;
 always @ (*) begin
     case(data_sel)
         2'b00:   iic_data = CHIP_ADDR;
@@ -29,7 +30,6 @@ always @ (*) begin
 end
 
 // SYSTEM CONTROL
-wire [1:0] data_sel;
 wire trans_start, trans_chip, trans_reg, trans_data, trans_stop;
 wire finish_start, finish_chip, finish_reg, finish_data, finish_stop;
 trans_ctrl iic_trans_control(
