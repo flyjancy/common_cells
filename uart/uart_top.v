@@ -9,6 +9,7 @@
 //
 // 20201203  pastglory   1.0      Initial Release. 
 // 20201210  pastglory   1.1      Add uart_tx(with some testing) modules
+// 20210809  pastglory   1.2      update clkuart_gen module, modify keyboard_inst
 // ----------------------------------------------------------------------- // 
 
 module uart_top (
@@ -26,7 +27,7 @@ assign row = 1'b0;
 
 wire clk_uart;
 
-clk_div clk_div_inst (
+clkuart_gen clk_uart_inst (
      .clk_in         (clk)
     ,.rst_n          (rst_n)
     ,.clk_out        (clk_uart)
@@ -41,6 +42,7 @@ uart_rx uart_rx_inst (
 );
 
 wire [7 : 0] data_gen; // generated data
+wire [4 : 0] key_pulse;
 wire start_gen; // data generator enable
 wire start_tx;  // uart tx enable
 
@@ -64,7 +66,10 @@ keyboard keyboard_inst (
      .clk            (clk)
     ,.rst_n          (rst_n)
     ,.col            (~col)
-    ,.key_pulse      ({start_gen, start_tx, 2'b0})
+    ,.key_pulse      (key_pulse)
 );
+
+assign start_gen = key_pulse[3];
+assign start_tx  = key_pulse[2];
 
 endmodule
