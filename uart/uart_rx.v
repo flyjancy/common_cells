@@ -8,6 +8,7 @@
 // Date      BY          Version  Change Description
 //
 // 20201203  pastglory   1.0      Initial Release. 
+// 20210810  pastglory   1.1      Add rx_done
 // ----------------------------------------------------------------------- // 
 
 module uart_rx (
@@ -15,7 +16,8 @@ module uart_rx (
     input               clk_uart,       // UART clock
     input               rst_n,          // reset
     input               rxd,            // rx data
-    output [7 : 0]      data            // received data
+    output [7 : 0]      data,           // received data
+    output              rx_done         // receive successfully
 );
 
 // using shift reg to change status
@@ -51,5 +53,7 @@ always @ (posedge clk or negedge rst_n) begin
     else if (cnt_en & clk_uart & (cnt < 4'h9)) data_reg[cnt-1] <= rxd;  
 end
 assign data = data_reg;
+
+wire rx_done = cnt == 4'h9;
 
 endmodule
