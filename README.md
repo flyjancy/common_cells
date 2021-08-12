@@ -29,7 +29,7 @@ This repository contains common cells(Verilog) for use in projects.
 | Name | Description | Status |
 | :-: | :-: | :-: |
 | `ahb_lite` | simple implementation of AHB-Lite protocol | *todo* |
-| `iicm` | iic master controller(using for controlling MP8864) | *doing* |
+| `iicm` | iic master controller(using for controlling MP8864) | finish |
 
 ### Special Module
 
