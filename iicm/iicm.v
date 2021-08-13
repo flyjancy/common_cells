@@ -1,13 +1,14 @@
 // -----------------------------Details----------------------------------- // 
 // File        : iicm.v
 // Author      : pastglory
-// Date        : 20210812
-// Version     : 1.0
+// Date        : 20210813
+// Version     : 1.1
 // Description : iic master(using for MP8864)
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
 // 20210812  pastglory   1.0      Initial Release. 
+// 20210813  pastglory   1.1      Update Debug Signal
 // ----------------------------------------------------------------------- // 
 
 module iicm #(
@@ -81,6 +82,9 @@ always @ (posedge clk or negedge rstn) begin
         end
         5:  begin // STOP
             sda_is_out <= 1'b1;
+            if (interrupt) stage <= 4'd6;
+        end
+        6: begin
             if (interrupt) stage <= 4'd0;
         end
         7, 8, 9, 10, 11, 12, 13, 14: begin
@@ -130,6 +134,10 @@ always @ (posedge clk) begin
         if (cnt == 12'd400)
             sda_o <= 1'b1;
     end
+    6: begin
+        scl_o <= 1'b1;
+        sda_o <= 1'b1;
+    end
     7, 8, 9, 10, 11, 12, 13, 14: begin
         sda_o <= iic_data[14-stage];
         if (cnt == 12'd0)
@@ -153,6 +161,6 @@ always @ (posedge clk) begin
 end
 
 // DBG
-assign finish   = stage == 4'd0;
+assign finish   = stage == 4'd6;
 
 endmodule
