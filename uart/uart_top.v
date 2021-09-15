@@ -1,15 +1,15 @@
 // -----------------------------Details----------------------------------- // 
 // File        : uart_top.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20201210
 // Version     : 1.1
 // Description : uart top module
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20201203  pastglory   1.0      Initial Release. 
-// 20201210  pastglory   1.1      Add uart_tx(with some testing) modules
-// 20210809  pastglory   1.2      update clkuart_gen module, modify keyboard_inst
+// 20201203  flyjancy   1.0      Initial Release. 
+// 20201210  flyjancy   1.1      Add uart_tx(with some testing) modules
+// 20210809  flyjancy   1.2      update clkuart_gen module, modify keyboard_inst
 // ----------------------------------------------------------------------- // 
 
 module uart_top (

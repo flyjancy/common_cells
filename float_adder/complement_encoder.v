@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : complement_encoder.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20200127
 // Version     : 1.0
 // Description : get 2's complement code
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20200127  pastglory   1.0      Initial Release. 
+// 20200127  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- // 
 
 module complement_encoder #(

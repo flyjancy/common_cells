@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : clkuart_gen.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20210809
 // Version     : 1.0
 // Description : clkuart generate module
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20210809  pastglory   1.0      Initial Release. 
+// 20210809  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- // 
 
 module clkuart_gen # (

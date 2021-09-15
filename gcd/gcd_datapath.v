@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : gcd_datapath.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20210119
 // Version     : 1.0
 // Description : GCD data path
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20210119  pastglory   1.0      Initial Release. 
+// 20210119  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- //
 
 module gcd_datapath(

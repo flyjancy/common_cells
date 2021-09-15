@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : gcd.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20210119
 // Version     : 1.0
 // Description : Calculate gcd(a, b) -> res
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20210119  pastglory   1.0      Initial Release. 
+// 20210119  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- //
 
 module gcd(

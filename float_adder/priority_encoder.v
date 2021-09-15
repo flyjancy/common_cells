@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : priority_encoder.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20200127
 // Version     : 1.0
 // Description : find the MSB(1) 
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20200127  pastglory   1.0      Initial Release.    
+// 20200127  flyjancy   1.0      Initial Release.    
 // ----------------------------------------------------------------------- //
 
 module priority_encoder (

@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : gcd_control.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20210119
 // Version     : 1.0
 // Description : GCD control unit
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20210119  pastglory   1.0      Initial Release. 
+// 20210119  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- //
 
 module gcd_control(

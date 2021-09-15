@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : float_mul.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20200128
 // Version     : 1.0
 // Description : 32-bit float point multiplier
 // -----------------------------History-----------------------------------//
 // Date      BY          Version  Change Description
 //
-// 20200128  pastglory   1.0      Initial Release. 
+// 20200128  flyjancy   1.0      Initial Release. 
 // -----------------------------------------------------------------------// 
 
 module float_mul #(

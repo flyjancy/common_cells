@@ -1,14 +1,14 @@
 // -----------------------------Details----------------------------------- // 
 // File        : iicm.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20210813
 // Version     : 1.1
 // Description : iic master(using for MP8864)
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20210812  pastglory   1.0      Initial Release. 
-// 20210813  pastglory   1.1      Update Debug Signal
+// 20210812  flyjancy   1.0      Initial Release. 
+// 20210813  flyjancy   1.1      Update Debug Signal
 // ----------------------------------------------------------------------- // 
 
 module iicm #(

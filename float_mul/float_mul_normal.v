@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : float_mul_normal.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20200128
 // Version     : 1.0
 // Description : normalize the result
 // -----------------------------History-----------------------------------//
 // Date      BY          Version  Change Description
 //
-// 20200128  pastglory   1.0      Initial Release. 
+// 20200128  flyjancy   1.0      Initial Release. 
 // -----------------------------------------------------------------------// 
 
 module float_mul_normal #(

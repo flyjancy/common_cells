@@ -1,13 +1,13 @@
 // -----------------------------Details----------------------------------- // 
 // File        : keyboard.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20201210
 // Version     : 1.0
 // Description : process keyboard input
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20201210  pastglory   1.0      Initial Release. 
+// 20201210  flyjancy   1.0      Initial Release. 
 // ----------------------------------------------------------------------- // 
 
 module keyboard(

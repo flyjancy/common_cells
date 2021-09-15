@@ -1,14 +1,14 @@
 // -----------------------------Details----------------------------------- // 
 // File        : uart_rx.v
-// Author      : pastglory
+// Author      : flyjancy
 // Date        : 20201203
 // Version     : 1.0
 // Description : uart module for receiving data
 // -----------------------------History----------------------------------- //
 // Date      BY          Version  Change Description
 //
-// 20201203  pastglory   1.0      Initial Release. 
-// 20210810  pastglory   1.1      Add rx_done
+// 20201203  flyjancy   1.0      Initial Release. 
+// 20210810  flyjancy   1.1      Add rx_done
 // ----------------------------------------------------------------------- // 
 
 module uart_rx (
