@@ -55,7 +55,7 @@ assign        lm      =             {(le == 8'b0 ? 1'b0 : 1'b1), (agtb ? bm : am
 assign        alm     =             lm >> de;
 
 wire          [M + 2 : 0]           gmout, almout;
-ComplementEncoder #(
+complement_encoder #(
      .Width           (M + 3)  
 )   Encoder_g     (
      .DataIn          ({2'b0, gm})
@@ -63,7 +63,7 @@ ComplementEncoder #(
     ,.DataOut         (gmout)
 );
 
-ComplementEncoder #(
+complement_encoder #(
      .Width           (M + 3)
 )   Encoder_l     (
      .DataIn          ({2'b0, alm})
@@ -77,7 +77,7 @@ assign        cm_com      =         gmout + almout;
 //  sign of output
 assign        c[Width - 1] =        cm_com[M + 2];
 
-ComplementEncoder #(
+complement_encoder #(
      .Width           (M + 3)
 )   Encoder_out   (
      .DataIn          (cm_com)
@@ -86,7 +86,7 @@ ComplementEncoder #(
 );
 
 wire          [4 : 0]               sc;
-PriorityEncoder  PE (
+priority_encoder  PE (
      .DataIn          (cm[24:0])
     ,.DataOut         (sc)
 );

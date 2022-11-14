@@ -44,7 +44,7 @@ assign        cmtmp             =   am * bm;
 wire          [M : 0]               cm;
 wire          [E - 1 : 0]           ce;
 
-FloatMulNormal #(
+float_mul_normal #(
          .E         (E)
         ,.M         (M)
 )       Nor(
